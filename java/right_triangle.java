@@ -1,0 +1,26 @@
+import java.util.*;
+ class right_triangle {
+    public static void main(String[] args)  
+    {
+
+Scanner obj = new Scanner(System.in);
+{
+   int row;
+   int col;
+    int num = obj.nextInt();
+
+    for (row=1;row<=num;row++)
+    {
+        System.out.printf("\n");
+
+    for (col=1;col<=row;col++)
+    {        
+        System.out.printf(" * ");
+    }
+    
+    }
+   
+    
+
+    
+}}}
