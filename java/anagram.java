@@ -11,7 +11,6 @@ class anagram {
         {
             char[] ca1 = s1.toCharArray();                                                      
             char[] ca2 = s2.toCharArray();
-
             Arrays.sort(ca1);
             Arrays.sort(ca2);
             boolean result = Arrays.equals(ca1, ca2);

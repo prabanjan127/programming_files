@@ -1,36 +1,40 @@
+package d_15_3;
+
 import java.util.*;
-class transpose {
-    public static void main(String[] args) {
-        Scanner sc =  new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        int a[][] = new int[n][m];
-        int b[][]= new int[m][n];
-        int c[][]= new int [n][m];
-        for(int i=0;i<n;i++){
-        for(int j=0;j<m;j++){
-        a[i][j]=sc.nextInt();
-        //System.out.println(a[i][j]);
-        }
-        }
-        for(int i=0; i<m; i++,System.out.println())
+class transpose
+{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
         {
-            for(int j=0;j<n; j++)
+            int n = s.nextInt();
+            int m = s.nextInt();
+            int arr[][] = new int[n][m];   
+            for(int i=0; i<n; i++)
             {
-               b[i][j]=a[j][i];
-               System.out.print(b[i][j]+" ");
+                for(int j=0;j<m; j++)
+                {
+                    arr[i][j] =s.nextInt();
+                }
+            } 
+            System.out.println("original");
+            for(int i=0; i<n; i++,System.out.println())
+            {
+                for(int j=0;j<m; j++)
+                {
                 
-            }
-        }  
-        for(int i=0; i<n; i++,System.out.println())
-        {
-            for(int j=0; j<n; j++)
+                    System.out.print(arr[i][j]+" ");
+
+                }
+            }    
+            System.out.println("changed matrix");
+            for(int i=0; i<m; i++,System.out.println())
             {
-                c[i][j]=a[i][j]*b[i][j];
-                System.out.print(c[i][j]+" ");
-            }
-        }  
-        
+                for(int j=0;j<n; j++)
+                {
+                   
+                    System.out.print(arr[j][i]+" ");
+                }
+            }      
+        }
     }
-    
 }
